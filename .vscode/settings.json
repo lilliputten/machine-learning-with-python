@@ -1,0 +1,15 @@
+{
+    // "python.defaultInterpreterPath": ".venv/Scripts/python.exe",
+    // "python.terminal.activateEnvironment": true,
+    "search.excludeFolders": [
+      ".git",
+      "node_modules",
+      ".venv"
+    ],
+    "search.exclude": {
+       ".venv": true,
+      "node_modules": true,
+      ".venv": true
+    },
+    "git.ignoreLimitWarning": true
+}

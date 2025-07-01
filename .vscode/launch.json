@@ -1,0 +1,43 @@
+// ex: set ft=jsonc :
+// @changed 2024.03.15, 15:19
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit:
+  // https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Run file",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Run start-app.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "start-app.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--dev",
+        "--demo-files-data-set-folder", "sweet-corn",
+        "--no-demo-files-omit-date-tag"
+      ]
+    },
+    {
+      "name": "Node: Run start-server.mjs",
+      "type": "node",
+      "request": "launch",
+      "program": "start-server.mjs",
+      "console": "integratedTerminal",
+      "args": [
+        "--help"
+        // "--dev",
+        // "--web-port",
+        // "8080"
+      ]
+    },
+  ]
+}

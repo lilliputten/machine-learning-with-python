@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "machine-learning-with-python"
+description = "Machine Learning with Python (freeCodeCamp.org TensorFlow course)"
+version = "0.0.0"
+authors = ["lilliputten <lilliputten@gmail.com>"]
+readme = "README.md"
+
+# @see https://python-poetry.org/docs/pyproject/#packages
+packages = [
+    { include = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+dotenv = "^0.9.9"
+# numpy = "^2"
+pandas = "^2"
+tensorflow-io-gcs-filesystem = "0.31.0"  # Compatible with TF 2.18.0 on Windows
+tensorflow-metadata = "^1.17.2"
+tensorflow-probability = "^0.25.0"
+matplotlib = "^3.10.3"
+# tensorflow = "2.15.0"  # Old version, compatible with used examples
+tensorflow = "2.19.0"
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+pyright = "^1.1.400"
+poetry-plugin-export = "^1.8.0"
+isort = "^6"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.autopep8]
+max_line_length = 120
+# ignore = "E501,W6"  # or ["E501", "W6"]
+in-place = true
+recursive = true
+aggressive = 3
+
+[tool.blue]
+line-length = 120
+extend-exclude = '''(
+\._
+| .*\/src\/(migrations)\/.*
+)'''
+
+[tool.isort]
+# @see https://pycqa.github.io/isort/docs/configuration/options.html
+extend_skip = [".venv", "node_modules"]
+extend_skip_glob = ["src/migrations/*"]
+
+[tool.poetry.scripts]
+export_requirements = "poetry-scripts:export_requirements"
+lint = "poetry-scripts:lint"
+format = "poetry-scripts:format"
+check_all = "poetry-scripts:check_all"
