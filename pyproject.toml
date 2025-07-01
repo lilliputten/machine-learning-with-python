@@ -17,9 +17,8 @@ dotenv = "^0.9.9"
 pandas = "^2"
 tensorflow-io-gcs-filesystem = "0.31.0"  # Compatible with TF 2.18.0 on Windows
 tensorflow-metadata = "^1.17.2"
-tensorflow-probability = "^0.25.0"
+# tensorflow-probability = "0.23.0"  # All versions have compatibility issues with TF 2.19.0
 matplotlib = "^3.10.3"
-# tensorflow = "2.15.0"  # Old version, compatible with used examples
 tensorflow = "2.19.0"
 
 [tool.poetry.group.dev.dependencies]
