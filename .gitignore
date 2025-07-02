@@ -30,12 +30,6 @@ pip-delete-this-directory.txt
 .env*
 !.env*.SAMPLE
 .venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-/out
 
 # Data
 /.data*

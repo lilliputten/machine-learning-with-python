@@ -2,15 +2,15 @@ import subprocess
 
 
 def export_requirements():
-    print('Exporting requirements...')
+    print("Exporting requirements...")
     cmd = [
-        'poetry',
-        'export',
-        '-f',
-        'requirements.txt',
-        '--output',
-        'requirements.txt',
-        '--without-hashes',
+        "poetry",
+        "export",
+        "-f",
+        "requirements.txt",
+        "--output",
+        "requirements.txt",
+        "--without-hashes",
     ]
     subprocess.run(cmd)
-    print('Done')
+    print("Done")

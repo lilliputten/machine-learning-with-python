@@ -8,13 +8,15 @@
 
 ## Links
 
-- [Machine Learning with Python | freeCodeCamp.org](https://www.freecodecamp.org/learn/machine-learning-with-python/)
-- [Core Learning Algorithms.ipynb - Colab](https://colab.research.google.com/drive/15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay#forceEdit=true&sandboxMode=true&scrollTo=Edndbw4sU5Wd)
+- Original course: [Machine Learning with Python | freeCodeCamp.org](https://www.freecodecamp.org/learn/machine-learning-with-python/)
+- Course's Jupyter Notebook: [Core Learning Algorithms.ipynb - Colab](https://colab.research.google.com/drive/15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay#forceEdit=true&sandboxMode=true&scrollTo=Edndbw4sU5Wd)
+- This project: [lilliputten/machine-learning-with-python](https://github.com/lilliputten/machine-learning-with-python)
+
+## Documentation
+
+TensorFlow:
+
 - [TensorFlow](https://www.tensorflow.org/)
-
-This project:
-
-- [lilliputten/machine-learning-with-python](https://github.com/lilliputten/machine-learning-with-python)
 
 Markov models:
 
@@ -70,12 +72,13 @@ All the code examples has been upgraded from tensorflow v.2.15 to v.2.19.
 
 ## Poetry usage
 
-- [Commands | Documentation | Poetry](https://python-poetry.org/docs/cli/)
+The project uses [Poetry - Python dependency and packaging manager](https://python-poetry.org/).
+
+- Some [command](https://python-poetry.org/docs/cli/) examples are:
 
 ```bash
 poetry lock
 poetry install
-poetry run lint
 poetry run check_all
 poetry run python src/iris1.py
 ```

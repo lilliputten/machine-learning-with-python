@@ -2,31 +2,33 @@ import subprocess
 
 
 def isort():
-    print('Running imports sorter...')
+    print("Running imports sorter...")
     cmd = [
-        'isort',
-        '--only-modified',
-        '.',
+        "isort",
+        "--only-modified",
+        ".",
     ]
     subprocess.run(cmd)
 
 
 def lint():
-    print('Running pyright linter...')
+    print("Running pyright linter...")
     cmd = [
-        'pyright',
-        '.',
+        "pyright",
+        ".",
     ]
     subprocess.run(cmd)
 
 
 def format():
-    print('Running python linter (blue)...')
+    print("Running python linter (blue)...")
     cmd = [
-        'blue',
-        '.',
+        "black",
+        ".",
     ]
-    subprocess.run(cmd)
+    # env = os.environ.copy()
+    # env['PYTHONWARNINGS'] = 'ignore::UserWarning:click'
+    subprocess.run(cmd)  # , env=env)
 
 
 def check_all():
@@ -37,7 +39,6 @@ def check_all():
 
 # def test():
 #     # NOTE: It doesn't work as poetry hasn't invoked it under the venv environment
-#     # TODO: Run in a less com;ex way?
 #     print('Running unittest tests...')
 #     cmd = [
 #         'python',

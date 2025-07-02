@@ -22,7 +22,7 @@ matplotlib = "^3.10.3"
 tensorflow = "2.19.0"
 
 [tool.poetry.group.dev.dependencies]
-blue = "^0.9.1"
+black = {version = "^25.0.0", extras = ["jupyter"]}
 pyright = "^1.1.400"
 poetry-plugin-export = "^1.8.0"
 isort = "^6"
@@ -39,12 +39,13 @@ in-place = true
 recursive = true
 aggressive = 3
 
-[tool.blue]
+[tool.black]
 line-length = 120
-extend-exclude = '''(
-\._
-| .*\/src\/(migrations)\/.*
-)'''
+# extend-exclude = '''(
+# \._
+# | \.venv
+# | .*\/src\/(migrations)\/.*
+# )'''
 
 [tool.isort]
 # @see https://pycqa.github.io/isort/docs/configuration/options.html
