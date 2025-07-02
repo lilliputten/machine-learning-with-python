@@ -3,8 +3,7 @@
 {
   "venvPath": ".",
   "venv": ".venv",
-  // Disabled type checks due to getting a lot of false errors (for django models) like these:
-  // `... Type "Literal[True]" cannot be assigned to type "type[NOT_PROVIDED]" (reportArgumentType)`
+  // Disabled type checks due to getting a lot of false errors
   "typeCheckingMode": "off",
   // "reportAttributeAccessIssue": false,
   "exclude": [
