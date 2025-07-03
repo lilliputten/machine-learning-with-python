@@ -35,9 +35,13 @@ Use Keras if you need a deep learning library that:
 Keras is a very powerful module that allows us to avoid having to build neural networks from scratch. It also hides a lot of mathematical complexity (that otherwise we would have to implement) inside of helpful packages, modules and methods.
 
 - [Keras: Deep Learning for humans](https://keras.io/)
-- [Basic classification: Classify images of clothing  |  TensorFlow Core](https://www.tensorflow.org/tutorials/keras/classification)
+- [Basic classification: Classify images of clothing | TensorFlow Core](https://www.tensorflow.org/tutorials/keras/classification)
 
 - [Neural Networks.ipynb - Colab](https://colab.research.google.com/drive/1m2cg3D1x3j5vrFc-Cu0gMvc48gWyCOuG)
+
+Fine-tuning:
+
+- [Transfer learning and fine-tuning | TensorFlow Core](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
 ## Description
 
@@ -86,7 +90,7 @@ Jupyter notebook: [Computer Vision.ipynb - Colab](https://colab.research.google.
 - [x] [Convolutional Neural Networks](https://www.freecodecamp.org/learn/machine-learning-with-python/tensorflow/convolutional-neural-networks)
 - [x] [Convolutional Neural Networks: The Convolutional Layer](https://www.freecodecamp.org/learn/machine-learning-with-python/tensorflow/convolutional-neural-networks-the-convolutional-layer)
 - [x] [Creating a Convolutional Neural Network](https://www.freecodecamp.org/learn/machine-learning-with-python/tensorflow/creating-a-convolutional-neural-network)
-- [ ] [Convolutional Neural Networks: Evaluating the Model](https://www.freecodecamp.org/learn/machine-learning-with-python/tensorflow/convolutional-neural-networks-evaluating-the-model)
+- [x] [Convolutional Neural Networks: Evaluating the Model](https://www.freecodecamp.org/learn/machine-learning-with-python/tensorflow/convolutional-neural-networks-evaluating-the-model)
 - [ ] [Convolutional Neural Networks: Picking a Pretrained Model](https://www.freecodecamp.org/learn/machine-learning-with-python/tensorflow/convolutional-neural-networks-picking-a-pretrained-model)
 
 ### Natural Language Processing With RNNs:
@@ -122,3 +126,9 @@ poetry install
 poetry run check_all
 poetry run python src/iris1.py
 ```
+
+## Data folders
+
+Downloaded files are stored in the folder:
+
+`~/.keras/datasets`

@@ -20,6 +20,11 @@ tensorflow-metadata = "^1.17.2"
 # tensorflow-probability = "0.23.0"  # All versions have compatibility issues with TF 2.19.0
 matplotlib = "^3.10.3"
 tensorflow = "2.19.0"
+# tensorflow-datasets = "^4.9.9"
+# tensorflow-datasets = "4.8.2"
+# tensorflow-datasets = "4.7.2"
+# tensorflow-datasets = "~4.7"
+tensorflow-datasets = "4.7.2"
 
 [tool.poetry.group.dev.dependencies]
 black = {version = "^25.0.0", extras = ["jupyter"]}

@@ -1,12 +1,12 @@
 # Step 1: Initialiing
 
+# %tensorflow_version 2.x  # this line is not required unless you are in a notebook
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
 import matplotlib.pyplot as plt
-
-# %tensorflow_version 2.x  # this line is not required unless you are in a notebook
 import tensorflow as tf
 
 # Use aliases to avoid import resolution issues
