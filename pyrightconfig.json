@@ -4,10 +4,10 @@
   "venvPath": ".",
   "venv": ".venv",
   // Disabled type checks due to getting a lot of false errors
-  "typeCheckingMode": "off",
+  // "typeCheckingMode": "off",
   // "reportAttributeAccessIssue": false,
   "exclude": [
-    "*-orig.py",
+    "src/*-orig.py",
     "**/migrations",
     ".venv",
     ".vscode",
