@@ -1,0 +1,3 @@
+# Ignore saved models
+*.h5
+*.keras
